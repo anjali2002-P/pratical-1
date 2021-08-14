@@ -19,8 +19,8 @@ object Calendar {
     def main(args: Array[String]) {
         val calc = new MyCalculator()
         println("sum of x + y = " + calc.add(25,10));
-        println("sum of x + y = " + calc.sub(25,10));
-        println("sum of x + y = " + calc.mul(25,10));
-        println("sum of x + y = " + calc.div(25,10));
+        println("sub of x - y = " - calc.sub(25,10));
+        println("mul of x * y = " * calc.mul(25,10));
+        println("div of x / y = " / calc.div(25,10));
     }
 }
