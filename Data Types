@@ -1,0 +1,40 @@
+object DataTypes{
+
+val i:Int=10 
+var bool:Boolean=true;
+val b:Byte=10
+val l:Long=10
+val s:Short=10
+val d:Double=5.0
+val f:Float=6.0f
+val name:String="Scala"
+val name2:Char ='S'
+val nullReferenceVariable: Null=null
+
+def logException(e:Exception):Nothing={
+    println("logging Exception: %s".format(e.getMessage))
+    throw new Exception("My New Exception")}
+
+
+def anyref(x: AnyRef)=println("AnyRef"+x)
+def any(y: Any)=println("Any"+y)
+
+def show():Unit=
+{
+println("Integer"+" "+ i)
+println("boolean"+" "+ bool)
+println("Byte"+" "+ b)
+println("Long"+" "+ l)
+println("Short"+" "+ s)
+println("Double"+" "+ d)
+println("Float"+" "+ f)
+println("String"+" "+ name)
+println("Char"+" "+  name2)
+}
+
+def main(args:Array[String]){
+show();
+anyref(nullReferenceVariable)
+any(nullReferenceVariable)
+}
+}
